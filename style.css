@@ -35,6 +35,7 @@ section{
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .half-width h1{
     font-size: 50px;
     color: #EC4C7A;
@@ -56,8 +57,6 @@ section{
     margin-left: -10%;
 }
 
-
-
 .button{
     text-decoration: none;
     background-image: linear-gradient(to right, #ec5093, #ed4e8b, #ed4d83, #ed4c7b, #ed4b73);
@@ -76,7 +75,6 @@ section{
     margin-bottom: 10%;
 }
 
-
 /* Main section */
 
 /* BIOGRAPHY */
@@ -91,6 +89,7 @@ section{
     padding-left: 15%;
     padding-right: 5%;
 }
+
 .biography-img{
     padding-left: 20%;
 }
@@ -131,7 +130,6 @@ section{
     height: auto ;
     width: auto;
     overflow: hidden;
-
 }
 
 .client-review h1{
@@ -142,14 +140,11 @@ section{
 .client-review h3{
     font-size: 20px;
     margin-bottom: 1%;
-
 }
 
 .client-review small{
-
     font-size: 16px;
     color: dimgray;
-
 }
 
 .review{
@@ -172,18 +167,160 @@ section{
     font-size: 16px;
 }
 
-.contact-email-box p{
-    font-size: 20px;
-}
-
 .copy-right{
     text-align: center;
     color: dimgray;
     padding: 1% 0; 
 }
 
+/* Responsiveness with media query (Learned from assignment) */
 
+/* smart phones */
+@media only screen and (min-width:320px) and (max-width:480px){
 
+    /* header section responsive */
+    .header-content{
+        padding-top:5%;
+    }
+    .half-width{
+        width: 100%; 
+        margin: 0 auto;
+    }
+ 
+    .half-width p{
+        font-size: 12px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .half-width  h2{
+        font-size: 20px;
+    }
+
+    .half-width h1{
+        font-size:25px;
+    }
+
+    .left-content{
+        padding-left: 5%;
+    }
+    
+    .header-img{
+        margin-left: 0;
+    }
+    /* biography responsive */
+    .right-content{     
+        margin-bottom: 20%;
+        padding-left: 5%;
+    }
+
+    .biography-img{
+        padding-left: 0;
+        margin-bottom: 10% !important;
+    }
+
+    /* Latest work responsive*/
+
+    .latest-work{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .latest-work h1{
+        font-size: 25px;
+    }
+
+    .latest-images img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+/* footer responsiveness */
+
+    .client-review h1{
+        font-size: 25px;
+    }
+
+    .client-review h3{
+        font-size:16px;
+    }
+
+    .client-review small{
+        font-size: 14px;
+    }
+
+    .review{
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .contact-email-box{
+        width:90%;
+        padding: 3% 0;
+    }
+
+    .contact-email-box p{
+        font-size: 14px;
+        margin: 5% auto;
+    }
+    
+    .contact-email-box h3{
+        font-size: 16px;
+    }
+
+    .copy-right{
+        padding: 5% 0;
+        font-size: 14px;
+    }    
+
+}
+
+/* ipad devices*/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+    .half-width p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .half-width  h2{
+        font-size: 24px;
+    }
+    .half-width h1{
+        font-size: 32px;
+        margin-top:2%;
+    }
+    
+    .left-content{
+        padding-left: 15%;
+    }
+    
+    .half-width img{
+        width: 100%;
+        margin-bottom:50%;
+        margin-top: 25%;
+    }
+    
+    .latest-work h1{
+        font-size: 32px;
+    }
+
+    .client-review h1{
+        font-size: 32px;
+    }
+
+    .review{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .contact-email-box{
+        width:80%;
+        padding: 3% 0;
+    }
+
+}
 
 
 
